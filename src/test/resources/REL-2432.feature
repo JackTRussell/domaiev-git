@@ -51,3 +51,9 @@ Scenario: this is dddd
 dddd
 Given sssggg
 When ssss
+
+@SC_62558
+Scenario: aa
+aaades
+Given given
+When sss
