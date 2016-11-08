@@ -1,4 +1,4 @@
-@Smoke @ST_323164822
+@ST_14786 @Smoke
 Feature: Smoke test set
 
 Background: Sign in
@@ -7,7 +7,7 @@ Given I am in page "Default"
 And I am signed in
 And I am in page "Dashboard"
 
-@REL-863 @SC_250141946
+@SC_62001 @REL-863
 Scenario: Create project
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -22,7 +22,7 @@ And I see that project is added to panel 'Projects'
 And I select project in panel 'Projects' in page "Dashboard"
 And I see that all the entered data matches data in page 'Project Settings' for the new project
 
-@REL-869 @SC_289342952
+@SC_62002 @REL-869
 Scenario: Edit project
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -48,7 +48,7 @@ And I change drop-down 'Saving mode' value to "requiring confirmation" in page '
 And I see success notification ""
 And I see that drop-down 'Saving mode' value is "requiring confirmation" in page 'Project settings'
 
-@REL-864 @SC_251298082
+@SC_62003 @REL-864
 Scenario: Create account
 When I navigate to page 'Profile'
 And I click on Create button for Credentials on Profile page
@@ -56,7 +56,7 @@ When I populated all required fields for new credential
 And I click button 'Add' for new credential
 Then I see my account in table 'Credentials'
 
-@REL-876 @SC_289087371
+@SC_62004 @REL-876
 Scenario: Add VCS
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -80,7 +80,7 @@ Then I see that "Git" is added to setting 'Version control system' in page 'Proj
 When I selected menu "San4aGit" in dropdown 'Account' at block VCS
 And I see that entered data matches data in setting 'Version control system' in page 'Project settings' for Git
 
-@REL-879 @SC_248998677
+@SC_62005 @REL-879
 Scenario: Update from Git
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -110,7 +110,7 @@ Then I see success notification ""
 And I read folder structure from Editor page
 And I check that GitHub and ReLime trees are the same
 
-@REL-865 @SC_296505084
+@SC_62006 @REL-865
 Scenario: Create folder
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -139,7 +139,7 @@ And I click on button "Create" on pop-up "New folder"
 Then I see that new folder is successfully created
 And I see that the new folder is selected in the tree
 
-@REL-866 @SC_311637397
+@SC_62007 @REL-866
 Scenario: Create feature
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -172,7 +172,7 @@ And I click on button "Create" on pop-up "New feature"
 Then I see that new feature is successfully created
 And I see that the new feature is selected in the tree
 
-@REL-867 @SC_309005432
+@SC_62008 @REL-867
 Scenario: Create scenario
     #And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB
@@ -216,7 +216,7 @@ Then I see that the new scenario is expanded
 And I see that new scenario is created and entered data matches data in Scenario Editor for the new scenario
 And I see that example table is displayed in the new scenario in Scenario Editor
 
-@REL-868 @SC_244816380
+@SC_62009 @REL-868
 Scenario: Create background
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -260,7 +260,7 @@ And I see that the new background is expanded
 And I see that background is displayed in separated control in the first position in Scenario Editor
 And I see that example table is not displayed in the new background in Scenario Editor
 
-@REL-870 @SC_260910809
+@SC_62010 @REL-870
 Scenario: Edit account
 When I navigate to page 'Profile'
 And I click on Create button for Credentials on Profile page
@@ -276,7 +276,7 @@ And I change textbox 'Password' value to "123" in table 'Credentials'
 And I click button 'Save' for edited account
 And I see my account in table 'Credentials'
 
-@REL-871 @SC_259275728
+@SC_62011 @REL-871
 Scenario: Edit folder
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -309,7 +309,7 @@ And I click button 'Enter'
 Then I see success notification ""
 And I see that changes are successfully saved in textbox 'Folder name' in folder info block under the tree
 
-@REL-872 @SC_318396777
+@SC_62012 @REL-872
 Scenario: Edit feature
     #And I see that new tag is added in tags input textbox in feature info block under the tree
 And I check that project "sDefault" is absent in DB
@@ -360,7 +360,7 @@ And I lose focus
 Then I see success notification ""
 And I see that tag "tag2" is added to feature info under the tree
 
-@REL-873 @tag @SC_295904333
+@SC_62013 @REL-873 @tag
 Scenario: Edit scenario + Save by Save option
     #And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB
@@ -410,7 +410,7 @@ And I click option "Save" under drop-down 'Actions' in scenario accordion
 Then I see that the scenario is collapsed
 And I see that changes are successfully saved and changed data matches data in Scenario Editor for the edited scenario
 
-@tag @REL-874 @SC_308785179
+@SC_62014 @tag @REL-874
 Scenario: Edit scenario + Save by Save Scenarios pop-up
     #And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB
@@ -462,7 +462,7 @@ And I click on button "Save" on pop-up "Save scenarios"
 Then I see that the scenario is collapsed
 And I see that changes are successfully saved and changed data matches data in Scenario Editor for the edited scenario
 
-@REL-875 @SC_248681998
+@SC_62015 @REL-875
 Scenario: Add TTS
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -492,7 +492,7 @@ And I see success notification ""
 Then I see that "https://jira.unitedsofthouse.com/" is added to setting 'Task tracking system' in page 'Project settings'
 And I see that entered data matches data in setting 'Task tracking system' in page 'Project settings' for Jira
 
-@REL-877 @SC_249811343
+@SC_62016 @REL-877
 Scenario: Create Jira-linked feature
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -531,7 +531,7 @@ And I see success notification ""
 Then I see that new jira-linked feature is successfully created
 And I see that data from linked Jira issue matches data in new feature in feature info block under the tree
 
-@REL-878 @SC_286769437
+@SC_62017 @REL-878
 Scenario: Remove TTS
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -562,7 +562,7 @@ Then I see that "https://jira.unitedsofthouse.com/" is added to setting 'Task tr
 And I see that entered data matches data in setting 'Task tracking system' in page 'Project settings' for Jira
 And I can delete "https://jira.unitedsofthouse.com/" from setting 'Task tracking system' in page 'Project settings'
 
-@REL-880 @SC_252663234
+@SC_62018 @REL-880
 Scenario: Remove scenario
     #And I select feature "fileName_1" in the tree
 And I check that project "sDefault" is absent in DB
@@ -607,7 +607,7 @@ When I click option "Delete" under drop-down 'Actions' in scenario accordion
 And I click on button "Delete" on pop-up "Delete scenario"
 Then I see that the scenario was successfully deleted
 
-@REL-881 @SC_263643686
+@SC_62019 @REL-881
 Scenario: Remove feature
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -641,7 +641,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete feature file"
 Then I see that the feature was successfully deleted
 
-@REL-882 @SC_285448532
+@SC_62020 @REL-882
 Scenario: Remove folder
 And I check that project "sDefault" is absent in DB
 And I click button 'Plus' in panel 'Projects' in page "Dashboard"
@@ -673,7 +673,7 @@ When I click icon 'Delete' in panel 'Features'
 And I click on button "Delete" on pop-up "Delete folder"
 Then I see that the folder was successfully deleted
 
-@REL-883 @SC_238237534
+@SC_62021 @REL-883
 Scenario: Remove account
 When I navigate to page 'Profile'
 And I click on Create button for Credentials on Profile page
@@ -685,7 +685,7 @@ When I navigate to page 'Profile'
 And I click button 'Delete' for created account in panel 'Credentials' in page 'User Profile'
 And I see account is not in the table 'Credentials'
 
-@REL-884 @SC_283861705
+@SC_62022 @REL-884
 Scenario: Remove project
 When I am in page "Dashboard"
 And I check that project "sDefault" is absent in DB
@@ -701,4 +701,3 @@ When I delete project in panel 'Projects' in page "Dashboard"
 And I click on button "Delete" on pop-up "Delete account"
 Then I see success notification ""
 And I see that the project was successfully deleted
-
