@@ -45,3 +45,9 @@ Examples:
 Scenario: Fourth scenario
 Given I created new scenario
 Then I see it synced in Relime
+
+@SC_62557 @ssss
+Scenario: this is dddd
+dddd
+Given sssggg
+When ssss
