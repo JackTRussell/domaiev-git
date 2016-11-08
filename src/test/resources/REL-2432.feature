@@ -63,3 +63,8 @@ Scenario: ааа
 вввв
 Given sss
 When dff
+
+@SC_62560
+Scenario: SC_396435429eee
+Given sss
+When dff
