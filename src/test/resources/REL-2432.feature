@@ -68,3 +68,8 @@ When dff
 Scenario: SC_396435429eee
 Given sss
 When dff
+
+@SC_62619
+Scenario: New scenario
+Given I created new scenario
+Then I see it synced in Relime
