@@ -39,3 +39,9 @@ Examples:
 |donald|1|60000.0|
 |dewie|2|62000.0|
 |mickey|3|35000.0|
+
+@SC_66229 @fourth_scenario_tag
+Scenario: Fourth scenario
+Given I created new scenario
+Then I see it synced in Relime
+But there are no duplicates
